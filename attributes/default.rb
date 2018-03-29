@@ -59,13 +59,15 @@ default['redisio']['artifact_type'] = 'tar.gz'
 default['redisio']['base_piddir'] = '/var/run/redis'
 
 # Version
-default['redisio']['version'] = if node['redisio']['package_install']
-                                  # latest version (only for package install)
-                                  nil
-                                else
-                                  # force version for tarball
-                                  '2.8.20'
-                                end
+# default['redisio']['version'] = if node['redisio']['package_install']
+#                                   # latest version (only for package install)
+#                                   nil
+#                                 else
+#                                   # force version for tarball
+#                                   '2.8.20'
+#                                 end
+
+default['redisio']['version'] = '2.8.20'
 
 # Custom installation directory
 default['redisio']['install_dir'] = nil
