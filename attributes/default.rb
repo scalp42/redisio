@@ -67,7 +67,7 @@ default['redisio']['base_piddir'] = '/var/run/redis'
 #                                   '2.8.20'
 #                                 end
 
-default['redisio']['version'] = '2.8.20'
+default['redisio']['version'] = '42'
 
 # Custom installation directory
 default['redisio']['install_dir'] = nil
